@@ -65,7 +65,7 @@ Styling
 .page-logo {
   height: 8rem;
   text-align: center;
-  margin-block: .5em 2em;
+  margin-block: .5em;
 }
 
 .section-hero {
@@ -73,6 +73,11 @@ Styling
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .hero-container {
@@ -82,7 +87,7 @@ Styling
 }
 
 .hero-title {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 .business-info-container {
@@ -91,7 +96,7 @@ Styling
 
 .hero-btn {
   display: inline-block;
-  margin-block: 1em 2em;
+  margin-block: 1em;
   margin-inline: auto;
   padding: .75em 4em;
   border: 2px solid #2d2013;
@@ -105,10 +110,37 @@ Styling
   background-color: transparent;
 }
 
+.hero-instagram {
+  color: white;
+  margin-bottom: 1.5em;
+}
 
 /* ====================
 Media Queries
 ==================== */
+
+@media (min-width: 400px) {
+
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: .5em;
+  }
+  .hero-small-txt {
+    font-size: 1rem;
+  }
+  .hero-txt {
+    font-size: 1.2rem;
+  }
+  .hero-btn {
+    font-size: 1.5rem;
+  }
+
+  .hero-instagram {
+    height: 50px;
+    width: 50px;
+  }
+
+}
 
 
 /* | Element            | Color Description      | Hex Code Example                         |
