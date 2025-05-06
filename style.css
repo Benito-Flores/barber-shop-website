@@ -1,3 +1,7 @@
+/* ====================
+Global Styles
+==================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,3 +9,114 @@
   /* border: 1px solid red; */
 }
 
+/* ====================
+Typography
+==================== */
+
+* {
+  font-family: "Playfair Display";
+}
+
+.hero-title,
+.hero-txt,
+.hero-small-txt{
+  color: #FAF9F6;
+  text-align: center;
+}
+
+.hero-small-txt {
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: 2px;
+  opacity: .8;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.hero-txt {
+  font-weight: 100;
+  line-height: 1.5em;
+  opacity: .8
+}
+
+.hero-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FAF9F6;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ====================
+Styling
+==================== */
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-logo {
+  height: 8rem;
+  text-align: center;
+  margin-block: .5em 2em;
+}
+
+.section-hero {
+  background-image: url(./img/barber-hero.jpg), linear-gradient(to bottom, #0c1206f5 10%, #0c12063c  40%, #0c1206f5 90%);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1rem;
+}
+
+.hero-title {
+  margin-bottom: 1em;
+}
+
+.business-info-container {
+  display: none;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-block: 1em 2em;
+  margin-inline: auto;
+  padding: .75em 4em;
+  border: 2px solid #2d2013;
+  background-color: #2d2013;
+  transition: background-color .5s;
+  border-radius: 5px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: transparent;
+}
+
+
+/* ====================
+Media Queries
+==================== */
+
+
+/* | Element            | Color Description      | Hex Code Example                         |
+| ------------------ | ---------------------- | ---------------------------------------- |
+| **Primary**        | Deep forest green      | `#2F4F4F` (Dark Slate Gray) or `#355E3B` |
+| **Accent**         | Warm wood brown / bark | `#8B5E3C` or `#6E4B28`                   |
+| **Neutral**        | Cream / off-white      | `#F5F5DC` (Beige) or `#FAF9F6`           |
+| **Text**           | Charcoal or dark brown | `#333333` or `#4B3621`                   |
+| **Call-to-Action** | Muted gold / amber     | `#DAA520` (Goldenrod) or `#F1B24A`       |
+text light cream #FAF9F6
+ */
