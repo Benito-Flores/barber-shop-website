@@ -75,7 +75,7 @@ html {
 }
 
 .info-container {
-  font-family: sans-serif;
+  font-family: "Playfair Display", Calibri;
   align-self: flex-start;
 }
 
@@ -86,6 +86,7 @@ html {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 1.25rem;
+  line-height: 1;
 }
 
 .address-info,
@@ -99,10 +100,12 @@ html {
 .about-us-title,
 .about-us-txt {
   font-family: Lato, sans-serif;
+  font-weight: 600;
 }
 
 .about-us-title {
-  font-weight: 500;
+  font-family: "Playfair Display", Calibri;
+  font-weight: 700;
   font-size: 1.4rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -110,6 +113,23 @@ html {
 }
 
 .about-us-txt {
+  opacity: .9;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+/* --- services --- */
+
+.services-title {
+  font-family: "Playfair Display", Calibri;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.services-txt {
   opacity: .9;
   line-height: 1.2;
   font-weight: 300;
@@ -144,7 +164,7 @@ Styling
 }
 
 .section-hero {
-  background-image: url(./img/barber-hero.jpg), linear-gradient(to bottom, #0c1206f5 10%, #0c12063c  40%, #0c1206f5 90%);
+  background-image: url(./img/barber-hero.jpg),linear-gradient(to bottom, #0c1206f5 10%, #0c12063c  40%, #0c1206f5 90%);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -172,8 +192,8 @@ Styling
   margin-block: 1em;
   margin-inline: auto;
   padding: .75em 4em;
-  border: 2px solid #19270c;
-  background-color: #19270c;
+  border: 2px solid #221308;
+  background-color: #271308;
   transition: background-color .5s;
   border-radius: 5px;
 }
@@ -196,12 +216,10 @@ Styling
 
 .section-about {
   padding: 3rem 1rem;
-  background-color: #c9e0b5;
 }
 
 .business-info-container {
-  border-radius: 20px;
-  background-color: white;
+  border: 1px solid black;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -255,25 +273,30 @@ Styling
 
 .about-img {
   width: 100%;
-  border-radius: 20px;
-  margin-block: 2rem .75rem;
 }
 
 .about-us-title {
-  margin-bottom: .25em;
+  margin-block: 1em .5em;
+}
+
+.about-us-txt {
+  margin-bottom: 1em;
+}
+
+.ratings-container {
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 /* --- services --- */
 
 .section-services {
   padding: 3rem 1rem;
-  background-color: #0b1a0c;
+  background-color: white;
 }
 
-.services-info {
-  background-color: #372e229a;
-  border-radius: 20px;
-  padding: 1.5rem;
+.services-title {
+  margin-block: 1em .5em;
 }
 
 /* --- banner section --- */
@@ -333,6 +356,61 @@ Styling
 
 .img-banner-txt-appear {
   opacity: 1;
+}
+
+/* --- map --- */
+
+.section-map {
+  background-color: black;
+}
+
+.map-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-height: 400px;
+  opacity: .85;
+  display: block;
+}
+
+/* --- footer --- */
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1f0d;
+}
+
+.footer-container > img {
+  height: 50px;
+}
+
+.footer-credit-container {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding-block: .5em
+}
+
+.footer-credit {
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+  opacity: .8;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.designer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.designer-link:hover,
+.designer-link:focus {
+  text-decoration: underline;
 }
 
 
