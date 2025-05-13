@@ -13,6 +13,35 @@ Global Styles
   display: grid;
 }
 
+.flex {
+  display: flex;
+}
+
+.section-about,
+.section-services,
+.section-choose-us,
+.section-call-to-action {
+  padding: 3rem 1rem;
+}
+
+
+/* ====================
+Global Typography
+==================== */
+
+.hero-small-txt,
+.hero-title,
+.hero-txt,
+.about-us-title,
+.about-us-txt,
+.services-title,
+.services-txt,
+.choose-us-title,
+.choose-us-txt,
+.call-to-action-title {
+  text-align: center;
+}
+
 /* ====================
 Typography
 ==================== */
@@ -56,9 +85,10 @@ html {
 .hero-btn {
   text-transform: uppercase;
   text-decoration: none;
-  color: #FAF9F6;
+  color: #000000;
+  font-family: "Playfair Display", Calibri;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1px;
 }
 
@@ -158,6 +188,14 @@ html {
   font-family: "Playfair Display", Calibri;
 }
 
+/* --- call to action --- */
+
+.call-to-action-title {
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
 /* ====================
 Styling
 ==================== */
@@ -205,10 +243,9 @@ Styling
   margin-block: 1em;
   margin-inline: auto;
   padding: .75em 4em;
-  border: 2px solid #221308;
-  background-color: #271308;
+  border: 2px solid #d9c9ad;
+  background-color: #d9c9ad;
   transition: background-color .5s;
-  border-radius: 5px;
 }
 
 .hero-btn:hover,
@@ -383,6 +420,32 @@ Styling
 }
 
 /* --- call to action --- */
+
+.section-call-to-action {
+  background-image: url(./img/call-to-action.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* --- choose us --- */
+
+.choose-us-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose-us-title {
+  margin-bottom: .5em;
+}
+
+.choose-us-txt {
+  margin-bottom: 1.25em;
+}
+
+.choose-us-img {
+  width: 60px;
+}
 
 /* --- map --- */
 
