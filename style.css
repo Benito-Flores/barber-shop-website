@@ -135,6 +135,19 @@ html {
   font-weight: 300;
 }
 
+.services-wrapper {
+  display: flex;
+}
+
+.services-img {
+  width: 25%;
+  max-width: 100%;
+}
+
+.services-info-wrapper {
+  width: 75%;
+}
+
 /* --- image banner --- */
 
 .img-banner-txt-one,
@@ -357,6 +370,19 @@ Styling
 .img-banner-txt-appear {
   opacity: 1;
 }
+
+/* --- choose us --- */
+
+.section-choose-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-us-img {
+  width: 100%;
+}
+
+/* --- call to action --- */
 
 /* --- map --- */
 
