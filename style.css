@@ -77,6 +77,10 @@ Global Typography
   opacity: .9;
 }
 
+.hero-btn {
+  font-family: "Lato", sans-serif;
+}
+
 /* ====================
 Typography
 ==================== */
@@ -117,9 +121,9 @@ Typography
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 /* --- about us --- */
@@ -238,7 +242,7 @@ Styling
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 100dvh;
+  min-height: 100svh;
   position: relative;
 }
 
@@ -588,7 +592,7 @@ Media Queries
 @media (min-width: 400px) {
 
   html {
-    font-size: 110%;
+    font-size: 105%;
   }
 
   .hero-title {
