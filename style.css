@@ -346,6 +346,7 @@ Styling
 .ratings-container {
   margin-bottom: 1rem;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 .ratings,
@@ -406,6 +407,10 @@ Styling
 
 .services-info-txt {
   margin-bottom: 3em;
+}
+
+.last-service-info-txt {
+  margin-bottom: 0;
 }
 
 .services-img {
@@ -681,3 +686,8 @@ Media Queries
   margin-top: 5px;
   margin-inline: auto;
 }
+
+.svg-wrapper {
+  border-radius: 2px;
+}
+
