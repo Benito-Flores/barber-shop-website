@@ -6,9 +6,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>Capitol City Barbers | Haircuts & Fades in Salem, Oregon</title>
 </head>
@@ -30,7 +27,7 @@ HERO SECTION
       <p class="hero-txt">
         Get clean fades, beard trims, and classic cuts from skilled barbers in Salem, Oregon. Book now and leave looking sharp and confident.
       </p>
-      <a class="hero-btn" href="https://louieatthecortado.setmore.com" target="_blank" rel="noopener noreferrer">
+      <a class="hero-btn" href="./site/select-barber.html">
         book now
       </a>
     </div>
@@ -60,7 +57,7 @@ ABOUT US SECTION
           <p class="address-info">2195 Hyacinth St NE #150, Salem, OR 97301</p>
         </div>          
       </a>
-      <a href="tel:+19719009488" class="phone">
+      <a href="tel:+19714366806" class="phone">
         <div class="phone-svg-wrapper svg-wrapper">
           <svg class="phone-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="icon-phone" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M6.62 10.79a15.464 15.464 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.05-.24c1.12.37 2.33.57 3.54.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.85 21 3 13.15 3 3.5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.21.2 2.42.57 3.54a1 1 0 01-.24 1.05l-2.2 2.2z"/>
@@ -68,7 +65,7 @@ ABOUT US SECTION
         </div>       
         <div class="info-container">
           <p class="phone-txt">phone</p>
-          <p class="phone-info">+1 (971) 900-9488</p>
+          <p class="phone-info">+1 (971) 436-6806</p>
         </div>          
       </a>
       <div class="hours">
@@ -93,13 +90,22 @@ ABOUT US SECTION
         clean fades, and precision beard work. The shop
         offers a welcoming space for men in Salem to relax and leave looking their best.
       </p>
-      <div class="ratings-container">
-        <div class="ratings">
-          <p class="five-star">5 <span class="rating-span">&#9733;</span></p>
-          <p class="five-star-txt">AVERAGE CUSTOMER RATING</p>
+      <div class="ratings-container flex">
+        <div class="ratings flex">
+          <p class="five-star flex">5
+            <svg class="rating-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M32 4l7.9 16 17.6 2.6-12.7 12.3 3 17.4L32 45.2 16.2 52.3l3-17.4L6.5 22.6 24.1 20 32 4z"/>
+            </svg>              
+          </p>
+          <p class="ratings-txt">AVERAGE CUSTOMER RATING</p>
         </div>
-        <div class="experience">
-          <p class="experience-years">20 <span class="experience-span">&#43;</span></p>
+        <div class="experience flex">
+          <p class="experience-years flex">20
+            <svg class="experience-svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="10" y="4" width="4" height="16" rx="1" />
+              <rect x="4" y="10" width="16" height="4" rx="1" />
+            </svg>
+          </p>
           <p class="experience-txt">YEARS OF EXPERIENCE</p>
         </div>
       </div>
@@ -119,7 +125,7 @@ SERVICES SECTION
         style but also uplifts your spirit.
       </p>
     </div>
-    <div class="services-container">
+    <div class="services-container flex">
       <div class="services-wrapper">
         <img class="services-img" src="./img/comb-scissors.png" alt="">
         <div class="services-info-wrapper">
@@ -175,7 +181,7 @@ SERVICES SECTION
         </div>
       </div>  
     </div>
-    <a class="hero-btn" href="https://louieatthecortado.setmore.com" target="_blank" rel="noopener noreferrer">
+    <a class="hero-btn" href="./site/select-barber.html">
       book now
     </a>
   </section>
@@ -213,25 +219,25 @@ CHOOSE US SECTION
         confident.      
       </p>
     </div>
-    <div section="choose-us-banner">
+    <div section="choose-us-wrapper">
       <div class="choose-us-col">
         <img class="choose-us-img" src="./img/license.png">
-        <p class="choose-us-title">LICENSED</p>
-        <p class="choose-us-txt">All our barbers are fully licensed
+        <p class="choose-us-wrapper-title">LICENSED</p>
+        <p class="choose-us-wrapper-txt">All our barbers are fully licensed
           professionals committed to high standards
         </p>
       </div>
       <div class="choose-us-col">
         <img class="choose-us-img" src="./img/experts.png">
-        <p class="choose-us-title">EXPERTS</p>
-        <p class="choose-us-txt">Our team brings years of experience
+        <p class="choose-us-wrapper-title">EXPERTS</p>
+        <p class="choose-us-wrapper-txt">Our team brings years of experience
           and sharp attention to detail to every cut
         </p>
       </div>
       <div class="choose-us-col">
         <img class="choose-us-img" src="./img/certified.png">
-        <p class="choose-us-title">CERTIFIED</p>
-        <p class="choose-us-txt">We meet all state and industry
+        <p class="choose-us-wrapper-title">CERTIFIED</p>
+        <p class="choose-us-wrapper-txt">We meet all state and industry
           certifications to ensure quality and safety
         </p>
       </div>
@@ -244,9 +250,9 @@ CALL TO ACTION SECTION
 
   <section class="section-call-to-action flex">
     <h2 class="call-to-action-title">
-      EXPERIENCE CLEAN CUTS AND CLASSIC GROOMING DONE RIGHT HERE AT SALEM
+      EXPERIENCE CLEAN CUTS AND CLASSIC GROOMING DONE RIGHT HERE IN SALEM
     </h2>
-    <a class="hero-btn" href="https://louieatthecortado.setmore.com" target="_blank" rel="noopener noreferrer">
+    <a class="hero-btn" href="./site/select-barber.html">
       book now
     </a>
   </section>

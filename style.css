@@ -44,8 +44,37 @@ Global Typography
 .services-txt,
 .choose-us-title,
 .choose-us-txt,
-.call-to-action-title {
+.call-to-action-title,
+.choose-us-wrapper-title,
+.choose-us-wrapper-txt {
   text-align: center;
+}
+
+.about-us-title,
+.services-title,
+.choose-us-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.section-about,
+.section-services,
+.section-choose-us,
+.section-call-to-action {
+  font-family: "Lato", sans-serif;
+}
+
+.about-us-txt,
+.services-txt,
+.choose-us-txt {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  opacity: .9;
 }
 
 /* ====================
@@ -54,12 +83,8 @@ Typography
 
 /* --- hero --- */
 
-html {
-  font-family:  Lato, sans-serif;
-}
-
 .section-hero {
-  font-family: "Playfair Display", Calibri;
+  font-size: "Playfair Display", serif;
 }
 
 .hero-title,
@@ -85,17 +110,16 @@ html {
 .hero-txt {
   font-weight: 100;
   line-height: 1.5em;
-  opacity: .8
+  opacity: .8;
 }
 
 .hero-btn {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  font-family: "Playfair Display", Calibri;
   font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 /* --- about us --- */
@@ -111,7 +135,6 @@ html {
 }
 
 .info-container {
-  font-family: "Playfair Display", Calibri;
   align-self: flex-start;
 }
 
@@ -119,7 +142,7 @@ html {
 .phone-txt,
 .hours-txt {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
   font-size: 1.25rem;
   line-height: 1;
@@ -129,59 +152,33 @@ html {
 .phone-info,
 .hours-line {
   font-size: .9rem;
-  font-weight: 100;
-  opacity: .7;
+  font-weight: 300;
+  opacity: .9;
 }
 
-.about-us-title,
-.about-us-txt {
-  font-family: Lato, sans-serif;
+.experience-years,
+.five-star {
+  font-size: 2em;
   font-weight: 600;
 }
 
-.about-us-title {
-  font-family: "Playfair Display", Calibri;
-  font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 1.25
-}
-
-.about-us-txt {
-  opacity: .9;
-  line-height: 1.2;
-  font-weight: 300;
+.ratings-txt,
+.experience-txt {
+  font-weight: 600;
 }
 
 /* --- services --- */
 
-.services-title {
-  font-family: "Playfair Display", Calibri;
-  font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 1.2;
+.services-info-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: .9;
 }
 
-.services-txt {
-  opacity: .9;
-  line-height: 1.2;
+.services-info-txt {
   font-weight: 300;
-}
-
-.services-wrapper {
-  display: flex;
-}
-
-.services-img {
-  width: 25%;
-  max-width: 100%;
-}
-
-.services-info-wrapper {
-  width: 75%;
+  line-height: 1.2;
 }
 
 /* --- image banner --- */
@@ -191,7 +188,19 @@ html {
 .img-banner-txt-three {
   color: white;
   font-size: 2rem;
-  font-family: "Playfair Display", Calibri;
+}
+
+/* --- choose us --- */
+
+.choose-us-wrapper-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.choose-us-wrapper-txt {
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 /* --- call to action --- */
@@ -248,10 +257,11 @@ Styling
   display: inline-block;
   margin-block: 1em;
   margin-inline: auto;
-  padding: .75em 4em;
-  border: 2px solid #d9c9ad;
-  background-color: #d9c9ad;
+  padding: .65em 3.5em;
+  border: 2px solid #dba57e;
+  background-color: #dba57e;
   transition: background-color .5s;
+  opacity: .7;
 }
 
 .hero-btn:hover,
@@ -270,13 +280,9 @@ Styling
 
 /* --- about us --- */
 
-.section-about {
-  padding: 3rem 1rem;
-}
-
 .business-info-container {
   border: 1px solid black;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -297,8 +303,7 @@ Styling
 }
 
 .svg-wrapper {
-  border: 1px solid #324b1a;
-  border-radius: 15px;
+  border: 1px solid #000000;
   align-self: start;
   padding: 10px;
 }
@@ -318,7 +323,7 @@ Styling
 .address-svg,
 .phone-svg,
 .hours-svg {
-  color: #324b1a;
+  color: #000000;
 }
 
 .address-txt,
@@ -336,28 +341,82 @@ Styling
 }
 
 .about-us-txt {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .ratings-container {
-  display: flex;
   margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.ratings,
+.experience {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.experience-years,
+.five-star {
+  align-items: center;
+}
+
+.rating-svg,
+.experience-svg {
+  height: 35px;
+  width: 35px;
+}
+
+.rating-svg {
+  transform: translateY(1px);
 }
 
 /* --- services --- */
 
 .section-services {
-  padding: 3rem 1rem;
+  padding: 0rem 1rem 3rem 1rem;
   background-color: white;
+}
+
+.services-title {
+  margin-block: 0em .5em;
+}
+
+.services-txt {
+  margin-bottom: 3rem;
+}
+
+.services-container {
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid black;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
 }
 
 .services-wrapper {
   margin-inline: auto;
   max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-.services-title {
-  margin-block: 1em .5em;
+.services-info-title {
+  margin-bottom: .5em;
+}
+
+.services-info-txt {
+  margin-bottom: 3em;
+}
+
+.services-img {
+  width: 25%;
+  max-width: 80px;
+}
+
+.services-info-wrapper {
+  width: 75%;
 }
 
 /* --- banner section --- */
@@ -426,16 +485,16 @@ Styling
   flex-direction: column;
 }
 
-.choose-us-img {
-  width: 100%;
+.choose-us-wrapper-title {
+  margin-bottom: .5em;
 }
 
-/* --- call to action --- */
+.choose-us-wrapper-txt {
+  margin-bottom: 1em;
+}
 
-.section-call-to-action {
-  background-image: url(./img/call-to-action.png);
-  background-size: cover;
-  background-position: center;
+.choose-us-img {
+  width: 100%;
 }
 
 /* --- choose us --- */
@@ -456,6 +515,14 @@ Styling
 
 .choose-us-img {
   width: 60px;
+}
+
+/* --- call to action --- */
+
+.section-call-to-action {
+  background-image: url(./img/call-to-action.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /* --- map --- */
@@ -519,6 +586,10 @@ Media Queries
 ==================== */
 
 @media (min-width: 400px) {
+
+  html {
+    font-size: 110%;
+  }
 
   .hero-title {
     font-size: 3rem;
