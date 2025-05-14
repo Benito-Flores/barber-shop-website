@@ -1,4 +1,19 @@
 /* ====================
+Variables
+==================== */
+
+:root {
+  --clr-primary: #fbfff3;
+  --clr-secondary: #042008;
+  --clr-accent: #0d5718;
+  --clr-dark: #2d1805;
+  --clr-dark-trans: #522c0e;
+  --clr-light: #ffffff;
+  --clr-black: #0c0c0c;
+}
+
+
+/* ====================
 Global Styles
 ==================== */
 
@@ -23,12 +38,43 @@ Global Styles
   padding: 3rem 1rem;
 }
 
+.section-about,
+.section-services,
+.section-choose-us {
+  background-color: var(--clr-primary);
+}
+
 .section-services,
 .section-call-to-action {
   flex-direction: column;
   align-items: center;
 }
 
+.hero-btn {
+  background-color: var(--clr-dark);
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: block;
+  margin-block: 1em;
+  padding: .65em 3.5em;
+  opacity: 1;
+  transition: background-color .5s;
+  max-width: 350px;
+  margin-inline: auto;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--clr-dark-trans);
+}
 
 /* ====================
 Global Typography
@@ -76,10 +122,6 @@ Global Typography
   opacity: .9;
 }
 
-.hero-btn {
-  font-family: "Lato", sans-serif;
-}
-
 /* ====================
 Typography
 ==================== */
@@ -116,19 +158,11 @@ Typography
   opacity: .8;
 }
 
-.hero-btn {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
-  font-size: 1.15rem;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
 /* --- about us --- */
 
 .business-info-container {
   font-style: normal;
+  color: var(--clr-black);
 }
 
 .address,
@@ -255,19 +289,6 @@ Styling
   margin-bottom: .5em;
 }
 
-.hero-btn {
-  display: inline-block;
-  margin-block: 1em;
-  margin-inline: auto;
-  padding: .65em 3.5em;
-  transition: background-color .5s;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: transparent;
-}
-
 .social-link {
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -280,11 +301,12 @@ Styling
 /* --- about us --- */
 
 .business-info-container {
-  border: 1px solid black;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: var(--clr-light);
+  border-radius: 2px;
 }
 
 .business-info-container,
@@ -305,6 +327,7 @@ Styling
   border: 1px solid #000000;
   align-self: start;
   padding: 10px;
+  border-radius: 2px;
 }
 
 .address-svg-wrapper {
@@ -333,6 +356,7 @@ Styling
 
 .about-img {
   width: 100%;
+  border-radius: 2px;  
 }
 
 .about-us-title {
@@ -365,6 +389,7 @@ Styling
 .experience-svg {
   height: 35px;
   width: 35px;
+  color: var(--clr-accent);
 }
 
 .rating-svg {
@@ -388,8 +413,9 @@ Styling
 .services-container {
   flex-direction: column;
   padding: 1rem;
-  border: 1px solid black;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
+  background-color: var(--clr-light);
+  border-radius: 2px;
 }
 
 .services-wrapper {
@@ -492,6 +518,16 @@ Styling
   margin-bottom: .5em;
 }
 
+.choose-us-wrapper-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: var(--clr-accent);
+  margin-top: 5px;
+  margin-inline: auto;
+}
+
 .choose-us-wrapper-txt {
   margin-bottom: 1em;
 }
@@ -546,6 +582,12 @@ Styling
   max-height: 400px;
   opacity: .85;
   display: block;
+  transition: opacity .25s;
+}
+
+.map-img:hover,
+.map-img:focus {
+  opacity: .65;
 }
 
 /* --- footer --- */
@@ -555,6 +597,7 @@ Styling
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--clr-secondary);
 }
 
 .footer-container > img {
@@ -598,96 +641,141 @@ Media Queries
     font-size: 105%;
   }
 
-  .hero-title {
-    font-size: 3rem;
-    margin-bottom: .5em;
+}
+
+@media (min-width: 800px) {
+
+  html {
+    font-size: 110%;
   }
+
+  .hero-title,
+  .hero-txt,
+  .services-title,
+  .services-txt,
+  .choose-us-title,
+  .choose-us-txt,
+  .call-to-action-title {
+    max-width: 900px;
+    margin-inline: auto;
+  }
+
   .hero-small-txt {
     font-size: 1rem;
   }
+
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: .2em;
+  }
+
   .hero-txt {
-    font-size: 1.2rem;
-  }
-  .hero-btn {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
-  .hero-instagram {
-    height: 50px;
-    width: 50px;
+  .business-info-container {
+    position: relative;
+    z-index: 1;
+    margin-top: -5rem;
+    flex-direction: row;
+    align-items: center;
+    padding: 2em;
+    max-width: 1200px;
+    margin-inline: auto;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  .about-us-container {
+    display: flex;
+    max-width: 1200px;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5em;
+  }
+
+  .wrapper {
+    width: 50%;
+
+  }
+
+  .section-services {
+    padding-bottom: 6em;
+  }
+
+  .section-choose-us,
+  .section-call-to-action {
+    padding-block: 6em;
+  }
+
+  .call
+
+  .call-to-action-title {
+    letter-spacing: 4px;
+  }
+
+  .about-us-title,
+  .about-us-txt {
+    text-align: left;
+    max-width: 400px;
+  }
+
+  .about-us-title,
+  .services-title,
+  .choose-us-title {
+    font-size: 2rem;
+  }
+
+  .about-us-txt,
+  .services-txt,
+  .choose-us-txt {
+    font-size: 1.25rem;
+  }
+
+  .ratings-container {
+    max-width: 400px;
+  }
+
+  .about-img {
+    width: 50%;
+  }
+
+  .services-title {
+    margin-top: .75em;
+  }
+
+  .services-container {
+    flex-direction: row;
+    padding: 4em;
+    gap: 3em;
+    margin-bottom: 1em;
+  }
+
+  .wrapper-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4em;
+  }
+
+  .services-info-txt {
+    margin-bottom: 0;
+  }
+
+  .img-banner-section {
+    display: flex;
+  }
+
+  .choose-us-txt {
+    margin-bottom: 2em;
+  }
+
+  .choose-us-wrapper {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    gap: 2em;
   }
 
 }
-
-:root {
-  --clr-primary: #fbfff3;
-  --clr-secondary: #042008;
-  --clr-accent: #0d5718;
-  --clr-dark: #2d1805;
-  --clr-light: #ffffff;
-  --clr-black: #0c0c0c;
-}
-
-.section-about {
-  background-color: var(--clr-primary);
-}
-
-.rating-svg,
-.experience-svg {
-  color: var(--clr-accent);
-}
-
-.section-services {
-  background-color: var(--clr-primary);
-}
-
-.services-container {
-  border: none;
-  background-color: var(--clr-light);
-  border-radius: 2px;
-}
-
-.section-choose-us {
-  background-color: var(--clr-primary);
-}
-
-.business-info-container {
-  border: none;
-  background-color: var(--clr-light);
-  color: var(--clr-black);
-  border-radius: 2px;
-}
-
-.hero-btn {
-  background-color: var(--clr-dark);
-  font-family: "Playfair Display", serif;
-  color: white;
-  font-weight: 500;
-  font-size: 1.4rem;
-  border-radius: 2px;
-  width: 100%;
-  text-align: center;
-}
-
-.about-img {
-  border-radius: 2px;
-}
-
-.page-footer {
-  background-color: var(--clr-secondary);
-}
-
-.choose-us-wrapper-title::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 3px;
-  background-color: var(--clr-accent);
-  margin-top: 5px;
-  margin-inline: auto;
-}
-
-.svg-wrapper {
-  border-radius: 2px;
-}
-
