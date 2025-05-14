@@ -6,7 +6,6 @@ Global Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 .grid {
@@ -135,7 +134,7 @@ Typography
 .address,
 .phone {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 .info-container {
@@ -155,7 +154,6 @@ Typography
 .address-info,
 .phone-info,
 .hours-line {
-  font-size: .9rem;
   font-weight: 300;
   opacity: .9;
 }
@@ -234,7 +232,7 @@ Styling
 }
 
 .section-hero {
-  background-image: url(./img/barber-hero.jpg),linear-gradient(to bottom, #0c1206f5 10%, #0c12063c  40%, #0c1206f5 90%);
+  background-image: url(./img/barber-hero.jpg),linear-gradient(to bottom, #030a02f1 10%, #0c12063c  45%, #030a02fb 90%);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -262,10 +260,7 @@ Styling
   margin-block: 1em;
   margin-inline: auto;
   padding: .65em 3.5em;
-  border: 2px solid #dba57e;
-  background-color: #dba57e;
   transition: background-color .5s;
-  opacity: .7;
 }
 
 .hero-btn:hover,
@@ -379,7 +374,6 @@ Styling
 
 .section-services {
   padding: 0rem 1rem 3rem 1rem;
-  background-color: white;
 }
 
 .services-title {
@@ -524,6 +518,11 @@ Styling
 /* --- call to action --- */
 
 .section-call-to-action {
+  background-color: #0000007e;
+  background-blend-mode: multiply;
+}
+
+.section-call-to-action {
   background-image: url(./img/call-to-action.png);
   background-size: cover;
   background-position: center;
@@ -551,7 +550,6 @@ Styling
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0d1f0d;
 }
 
 .footer-container > img {
@@ -559,7 +557,7 @@ Styling
 }
 
 .footer-credit-container {
-  background-color: black;
+  background-color: #000000;
   width: 100%;
   text-align: center;
   padding-block: .5em
@@ -614,4 +612,61 @@ Media Queries
     width: 50px;
   }
 
+}
+
+:root {
+  --clr-primary: #fbfff3;
+  --clr-secondary: #042008;
+  --clr-accent: #dba57e;
+  --clr-dark: #2d1805;
+  --clr-light: #ffffff;
+  --clr-black: #0c0c0c;
+}
+
+.section-about {
+  background-color: var(--clr-primary);
+}
+
+.rating-svg,
+.experience-svg {
+  color: var(--clr-dark);
+}
+
+.section-services {
+  background-color: var(--clr-primary);
+}
+
+.services-container {
+  border: none;
+  background-color: var(--clr-light);
+  border-radius: 2px;
+}
+
+.section-choose-us {
+  background-color: var(--clr-primary);
+}
+
+.business-info-container {
+  border: none;
+  background-color: var(--clr-light);
+  color: var(--clr-black);
+  border-radius: 2px;
+}
+
+.hero-btn {
+  background-color: var(--clr-dark);
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.about-img {
+  border-radius: 2px;
+}
+
+.page-footer {
+  background-color: var(--clr-secondary);
 }
