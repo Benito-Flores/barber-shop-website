@@ -617,7 +617,7 @@ Media Queries
 :root {
   --clr-primary: #fbfff3;
   --clr-secondary: #042008;
-  --clr-accent: #dba57e;
+  --clr-accent: #0d5718;
   --clr-dark: #2d1805;
   --clr-light: #ffffff;
   --clr-black: #0c0c0c;
@@ -629,7 +629,7 @@ Media Queries
 
 .rating-svg,
 .experience-svg {
-  color: var(--clr-dark);
+  color: var(--clr-accent);
 }
 
 .section-services {
@@ -670,4 +670,14 @@ Media Queries
 
 .page-footer {
   background-color: var(--clr-secondary);
+}
+
+.choose-us-wrapper-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: var(--clr-accent);
+  margin-top: 5px;
+  margin-inline: auto;
 }
