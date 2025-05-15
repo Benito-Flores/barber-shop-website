@@ -31,6 +31,13 @@ Global Styles
   display: flex;
 }
 
+.section-services,
+.section-call-to-action,
+.choose-us-wrapper,
+.choose-us-col {
+  flex-direction: column;
+}
+
 .section-about,
 .section-services,
 .section-choose-us,
@@ -47,8 +54,22 @@ Global Styles
 
 .section-services,
 .section-call-to-action {
-  flex-direction: column;
   align-items: center;
+}
+
+.hero-title,
+.services-title,
+.choose-us-title,
+.call-to-action-title {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.hero-txt,
+.services-txt,
+.choose-us-txt {
+  margin-inline: auto;
+  max-width: 600px;
 }
 
 .hero-btn {
@@ -88,6 +109,7 @@ Global Typography
 .about-us-txt,
 .services-title,
 .services-txt,
+.img-banner-section,
 .choose-us-title,
 .choose-us-txt,
 .call-to-action-title,
@@ -106,6 +128,7 @@ Global Typography
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1.25;
+  max-width: 900px;
 }
 
 .section-about,
@@ -139,7 +162,6 @@ Typography
 .hero-txt,
 .hero-small-txt{
   color: #FAF9F6;
-  text-align: center;
 }
 
 .hero-small-txt {
@@ -153,6 +175,7 @@ Typography
   font-size: 2.25rem;
   font-weight: 500;
   line-height: 1;
+  max-width: 900px;
 }
 
 .hero-txt {
@@ -427,7 +450,7 @@ Styling
 
 .services-container {
   flex-direction: column;
-  padding: 1rem;
+  padding: 3rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
   background-color: var(--clr-light);
   border-radius: 2px;
@@ -435,7 +458,7 @@ Styling
 
 .services-wrapper {
   margin-inline: auto;
-  max-width: 500px;
+  max-width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -553,18 +576,22 @@ Styling
 
 /* --- choose us --- */
 
-.choose-us-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .choose-us-title {
   margin-bottom: .5em;
 }
 
 .choose-us-txt {
   margin-bottom: 1.25em;
+}
+
+.choose-us-wrapper {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.choose-us-col {
+  align-items: center;
+  max-width: 350px;
 }
 
 .choose-us-img {
@@ -582,6 +609,10 @@ Styling
   background-image: url(./img/call-to-action.png);
   background-size: cover;
   background-position: center;
+}
+
+.call-to-action-title {
+  max-width: 900px;
 }
 
 /* --- map --- */
@@ -729,18 +760,7 @@ Media Queries
 @media (min-width: 800px) {
 
   html {
-    font-size: 110%;
-  }
-
-  .hero-title,
-  .hero-txt,
-  .services-title,
-  .services-txt,
-  .choose-us-title,
-  .choose-us-txt,
-  .call-to-action-title {
-    max-width: 900px;
-    margin-inline: auto;
+    font-size: 105%;
   }
 
   .hero-small-txt {
@@ -783,6 +803,27 @@ Media Queries
 
   }
 
+  .business-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .svg-wrapper {
+    align-self: center;
+  }
+
+  .address,
+  .hours,
+  .phone {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+  }
+
   .section-services {
     padding-bottom: 6em;
   }
@@ -792,9 +833,8 @@ Media Queries
     padding-block: 6em;
   }
 
-  .call
-
   .call-to-action-title {
+    font-size: 1.75rem;
     letter-spacing: 4px;
   }
 
@@ -855,10 +895,8 @@ Media Queries
   }
 
   .choose-us-wrapper {
-    max-width: 1200px;
-    margin-inline: auto;
-    display: flex;
-    gap: 2em;
+    flex-direction: row;
+    gap: 3em;
   }
 
 }
