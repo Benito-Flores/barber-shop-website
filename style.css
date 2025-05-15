@@ -130,7 +130,8 @@ Typography
 
 /* --- hero --- */
 
-.section-hero {
+.section-hero,
+.team-hero {
   font-size: "Playfair Display", serif;
 }
 
@@ -269,6 +270,18 @@ Styling
 
 .section-hero {
   background-image: url(./img/barber-hero.jpg),linear-gradient(to bottom, #030a02f1 10%, #0c12063c  45%, #030a02fb 90%);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100svh;
+  position: relative;
+}
+
+.team-hero {
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -639,7 +652,7 @@ Select Barber.html
 
 /* --- select barber.html --- */
 .team-hero {
-  background-image: url(../img/team-img.jpg),linear-gradient(to bottom, #030a02f1 10%, #0c12063c  45%, #030a02fb 90%);
+  background-image: url(.././img/team-img.jpg),linear-gradient(to bottom, #030a02f1 10%, #0c12063c  45%, #030a02fb 90%);
 }
 
 .section-choose-barber {
