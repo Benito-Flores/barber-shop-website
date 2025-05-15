@@ -34,7 +34,8 @@ Global Styles
 .section-about,
 .section-services,
 .section-choose-us,
-.section-call-to-action {
+.section-call-to-action,
+.section-choose-barber {
   padding: 3rem 1rem;
 }
 
@@ -91,7 +92,8 @@ Global Typography
 .choose-us-txt,
 .call-to-action-title,
 .choose-us-wrapper-title,
-.choose-us-wrapper-txt {
+.choose-us-wrapper-txt,
+.barber-title {
   text-align: center;
 }
 
@@ -632,6 +634,62 @@ Styling
 
 
 /* ====================
+Select Barber.html
+==================== */
+
+/* --- select barber.html --- */
+.team-hero {
+  background-image: url(../img/team-img.jpg),linear-gradient(to bottom, #030a02f1 10%, #0c12063c  45%, #030a02fb 90%);
+}
+
+.section-choose-barber {
+  background-image: linear-gradient(to bottom, var(--clr-black), #011401);
+  color: var(--clr-light);
+}
+
+.choose-barber-wrapper {
+  flex-direction: column;
+}
+
+.barber-link {
+  display: block;
+  margin-inline: auto;
+  text-decoration: none;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+}
+
+.barber-title {
+  font-family: "Lato", sans-serif;
+  margin-block: .5em 1.5em;
+  opacity: .8;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+}
+
+.barber-title:focus,
+.barber-title:hover {
+  opacity: .9;
+  border-bottom: 2px solid white;
+}
+
+.last-barber {
+  margin-bottom: 0;
+}
+
+.barber-img {
+  width: 100%;
+  opacity: .8;
+  border-radius: 4px;
+}
+
+.barber-img:focus,
+.barber-img:hover {
+  opacity: .9;  
+}
+
+/* ====================
 Media Queries
 ==================== */
 
@@ -639,6 +697,18 @@ Media Queries
 
   html {
     font-size: 105%;
+  }
+
+}
+
+@media (min-width: 520px) {
+
+  .choose-barber-wrapper {
+    flex-direction: row;
+    max-width: 900px;
+    margin-inline: auto;
+    justify-content: space-between;
+    gap: 1em;
   }
 
 }
