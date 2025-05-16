@@ -631,7 +631,7 @@ Styling
 
 .footer-container {
   align-items: center;
-  padding-block: 2rem;
+  padding: 2rem 1rem;
 }
 
 .footer-top .page-logo {
@@ -870,6 +870,10 @@ Media Queries
   .services-txt,
   .choose-us-txt {
     font-size: 1.25rem;
+  }
+
+  .about-us-title {
+    margin-top: 0;
   }
 
   .ratings-container {
