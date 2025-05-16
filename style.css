@@ -290,9 +290,11 @@ Typography
   font-size: .9rem;
 }
 
-.footer-info {
+.footer-txt {
   opacity: .8;
 }
+
+
 
 /* ====================
 Styling
@@ -636,6 +638,11 @@ Styling
   margin-block: 0;
 }
 
+.footer-info .phone {
+  width: fit-content;
+  margin-inline: auto;
+}
+
 .footer-txt {
   margin-bottom: .5em;
 }
@@ -648,6 +655,7 @@ Styling
   width: 35px;
   height: 35px;
   color: var(--clr-primary);
+  opacity: .8;
 }
 
 .footer-social:hover,
