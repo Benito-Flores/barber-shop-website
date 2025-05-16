@@ -631,7 +631,7 @@ Styling
 
 .footer-container {
   align-items: center;
-  padding: 2rem;
+  padding-block: 2rem;
 }
 
 .footer-top .page-logo {
