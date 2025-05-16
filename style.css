@@ -31,10 +31,15 @@ Global Styles
   display: flex;
 }
 
+.section-hero,
+.team-hero,
+.business-info-container,
 .section-services,
+.services-container,
 .section-call-to-action,
 .choose-us-wrapper,
-.choose-us-col {
+.choose-us-col,
+.footer-container {
   flex-direction: column;
 }
 
@@ -117,7 +122,8 @@ Global Typography
 .choose-us-wrapper-title,
 .choose-us-wrapper-txt,
 .barber-title,
-.choose-barber-title {
+.choose-barber-title,
+.footer-container {
   text-align: center;
 }
 
@@ -137,7 +143,8 @@ Global Typography
 .section-about,
 .section-services,
 .section-choose-us,
-.section-call-to-action {
+.section-call-to-action,
+.footer-container {
   font-family: "Lato", sans-serif;
 }
 
@@ -276,6 +283,17 @@ Typography
   font-weight: 900;
 }
 
+/* --- footer --- */
+
+.footer-container {
+  color: var(--clr-primary);
+  font-size: .9rem;
+}
+
+.footer-info {
+  opacity: .8;
+}
+
 /* ====================
 Styling
 ==================== */
@@ -283,14 +301,12 @@ Styling
 /* --- hero --- */
 
 .page-header {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .page-logo {
   height: 8rem;
-  text-align: center;
   margin-block: .5em;
 }
 
@@ -299,29 +315,12 @@ Styling
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   min-height: 100svh;
-  position: relative;
-}
-
-.team-hero {
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100svh;
-  position: relative;
 }
 
 .hero-container {
-  display: flex;
-  flex-direction: column;
   padding-inline: 1rem;
   margin-bottom: 5rem;
 }
@@ -330,21 +329,10 @@ Styling
   margin-bottom: .5em;
 }
 
-.social-link {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-}
-
-.hero-instagram {
-  color: white;
-}
-
 /* --- about us --- */
 
 .business-info-container {
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
   background-color: var(--clr-light);
   border-radius: 2px;
@@ -452,7 +440,6 @@ Styling
 }
 
 .services-container {
-  flex-direction: column;
   padding: 3rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.304);
   background-color: var(--clr-light);
@@ -575,9 +562,8 @@ Styling
 
 .choose-us-img {
   width: 100%;
+  width: 60px;
 }
-
-/* --- choose us --- */
 
 .choose-us-title {
   margin-bottom: .5em;
@@ -595,10 +581,6 @@ Styling
 .choose-us-col {
   align-items: center;
   max-width: 350px;
-}
-
-.choose-us-img {
-  width: 60px;
 }
 
 /* --- call to action --- */
@@ -642,15 +624,35 @@ Styling
 /* --- footer --- */
 
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--clr-secondary);
 }
 
-.footer-container > img {
-  height: 50px;
+.footer-container {
+  align-items: center;
+  padding: 2rem;
+}
+
+.footer-top .page-logo {
+  margin-block: 0;
+}
+
+.footer-txt {
+  margin-bottom: .5em;
+}
+
+.footer-txt:last-child {
+  margin-bottom: 1.1em;
+}
+
+.footer-svg {
+  width: 35px;
+  height: 35px;
+  color: var(--clr-primary);
+}
+
+.footer-social:hover,
+.footer-social:focus {
+  opacity: .6;
 }
 
 .footer-credit-container {
@@ -688,6 +690,12 @@ Select Barber.html
 
 .team-hero {
   background-image: url(./img/team-img.jpg),linear-gradient(to bottom, #030a02f1 10%, #0c12063c  45%, #030a02fb 90%);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100svh;
 }
 
 .team-hero-container {
@@ -899,6 +907,17 @@ Media Queries
     gap: 3em;
   }
 
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .footer-info {
+    text-align: right;
+  }
+
 }
 
 
@@ -931,4 +950,3 @@ Media Queries
 .section-choose-barber {
   background: linear-gradient(to bottom, #000000, #031b00);
 }
-
